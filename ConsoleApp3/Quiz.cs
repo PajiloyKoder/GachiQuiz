@@ -106,6 +106,7 @@ namespace ConsoleApp3
 
                 voices.RemoveAt(phrase);
                 points += 2;
+                return true;
             }
             else 
             {
