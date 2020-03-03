@@ -65,6 +65,8 @@ namespace ConsoleApp3
                 else
                     Rank = "Fucking Slave";
 
+
+
                 Console.WriteLine($"Ты выпил Cum {points} раз и твой ранг {Rank}");
                 return false;
             }
@@ -104,11 +106,6 @@ namespace ConsoleApp3
 
                 voices.RemoveAt(phrase);
                 points += 2;
-                
-                if (actors[answer].counter > 3)
-                    return false;
-                else
-                    return true;
             }
             else 
             {
