@@ -13,11 +13,15 @@ namespace ConsoleApp3
         {
             
             Quiz quiz = new Quiz();
+           
+           
+            quiz.Ochko();
             bool Login = true;
             while (Login)
                 Login = quiz.StartQuiz();
-            Console.WriteLine("Гц ебать, ты suck some ducks");
+          
             quiz.StartStonks("Stonks/GcEbat.mp3");
+           
             Console.ReadKey();
         }
     }
