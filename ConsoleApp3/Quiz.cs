@@ -56,11 +56,13 @@ namespace ConsoleApp3
             {
                 string Rank;
                 
-                if (points == MaxPoints * 2)
+                if (points == MaxPoints )
                     Rank = "DimAss";
-                else if (points >=  MaxPoints && points < MaxPoints * 2)
+                else if (points >= MaxPoints * 0.75 && points < MaxPoints )
+                    Rank = "Aniki";
+                else if (points >=  MaxPoints* 0.5 && points < MaxPoints * 0.75)
                     Rank = "Van";
-                else if (points >= MaxPoints*0.5 && points < MaxPoints )
+                else if (points >= MaxPoints*0.25 && points < MaxPoints * 0.5 )
                     Rank = "Начинающий Sucker Dick";
                 else
                     Rank = "Fucking Slave";
@@ -105,14 +107,14 @@ namespace ConsoleApp3
                     + actors[answer].Name + $" ,ты вгадав  {actors[answer].Name} {actors[answer].counter} раз");
 
                 voices.RemoveAt(phrase);
-                points += 2;
+                points += 1;
                 return true;
             }
             else 
             {
                 Console.WriteLine($"Лох на папей Cum у {voices[phrase].NameActor}, тры глоточкы");
-                points -= 1;
                 
+                voices.RemoveAt(phrase);
                 return true;
 
             }
